@@ -1,6 +1,6 @@
 {
-  "name": "cordova-plugin-advanced-http",
-  "version": "3.3.1",
+  "name": "@herdwatch/cordova-plugin-advanced-http",
+  "version": "3.3.2",
   "description": "Cordova / Phonegap plugin for communicating with HTTP servers using SSL pinning",
   "scripts": {
     "update:cert": "node ./scripts/update-e2e-server-cert.js && node ./scripts/update-e2e-client-cert.js",
@@ -15,7 +15,7 @@
     "release": "npm run test && ./scripts/release.sh"
   },
   "cordova": {
-    "id": "cordova-plugin-advanced-http",
+    "id": "@herdwatch/cordova-plugin-advanced-http",
     "platforms": [
       "ios",
       "android"
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/silkimen/cordova-plugin-advanced-http.git"
+    "url": "git+https://github.com/herdwatch-apps/cordova-plugin-advanced-http.git"
   },
   "keywords": [
     "cordova",
@@ -34,12 +34,9 @@
     "ssl",
     "tls"
   ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=4.0.0"
-    }
-  ],
+  "engines":     {
+    "cordova": ">=4.0.0"
+  },
   "author": "Wymsee",
   "contributors": [
     "devgeeks",
@@ -54,9 +51,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/silkimen/cordova-plugin-advanced-http/issues"
+    "url": "https://github.com/herdwatch-apps/cordova-plugin-advanced-http/issues"
   },
-  "homepage": "https://github.com/silkimen/cordova-plugin-advanced-http#readme",
+  "homepage": "https://github.com/herdwatch-apps/cordova-plugin-advanced-http#readme",
   "devDependencies": {
     "chai": "4.3.6",
     "colors": "1.4.0",
@@ -64,6 +61,6 @@
     "mocha": "9.2.2",
     "umd-tough-cookie": "3.0.0",
     "wd": "1.14.0",
-    "xml2js": "0.4.23"
+    "xml2js": "0.6.2"
   }
 }
