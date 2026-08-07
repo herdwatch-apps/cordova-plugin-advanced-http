@@ -1,6 +1,6 @@
 {
   "name": "@herdwatch/cordova-plugin-advanced-http",
-  "version": "3.3.2",
+  "version": "3.3.2-fix.1",
   "description": "Cordova / Phonegap plugin for communicating with HTTP servers using SSL pinning",
   "scripts": {
     "update:cert": "node ./scripts/update-e2e-server-cert.js && node ./scripts/update-e2e-client-cert.js",
@@ -35,7 +35,7 @@
     "ssl",
     "tls"
   ],
-  "engines":     {
+  "engines": {
     "cordova": ">=4.0.0"
   },
   "author": "Wymsee",
