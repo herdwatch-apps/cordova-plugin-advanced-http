@@ -1,5 +1,16 @@
 Cordova Advanced HTTP
 =====================
+
+## Why this fork exists
+
+Forked from [upstream](https://github.com/silkimen/cordova-plugin-advanced-http) because Herdwatch needed an `onProgress` callback for upload/download requests (not available upstream) and control over the npm package name/scope.
+
+Published as [`@herdwatch/cordova-plugin-advanced-http`](https://www.npmjs.com/package/@herdwatch/cordova-plugin-advanced-http).
+
+Changes from upstream:
+- Added an `onProgress` option to upload/download requests, reporting `transferred`/`total` byte counts as the request progresses (implemented on both Android and iOS, plus the shared JS layer).
+- Republished under the `@herdwatch/cordova-plugin-advanced-http` npm scope, with the plugin id and repository/homepage/bugs URLs updated to point at this fork.
+
 [![npm version](https://img.shields.io/npm/v/cordova-plugin-advanced-http)](https://www.npmjs.com/package/cordova-plugin-advanced-http?activeTab=versions)
 [![MIT Licence](https://img.shields.io/badge/license-MIT-blue?style=flat)](https://opensource.org/licenses/mit-license.php)
 [![downloads/month](https://img.shields.io/npm/dm/cordova-plugin-advanced-http.svg)](https://www.npmjs.com/package/cordova-plugin-advanced-http)
