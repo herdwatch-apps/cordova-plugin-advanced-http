@@ -10,6 +10,7 @@ Published as [`@herdwatch/cordova-plugin-advanced-http`](https://www.npmjs.com/p
 Changes from upstream:
 - Added an `onProgress` option to upload/download requests, reporting `transferred`/`total` byte counts as the request progresses (implemented on both Android and iOS, plus the shared JS layer).
 - Added a missing `UIKit` import to `SDNetworkActivityIndicator.m`, which Xcode 26's stricter module validation rejects.
+- Dropped the direct `<netinet6/in6.h>` imports from the bundled AFNetworking copy. The SDK shipped with Xcode 26.4 and later declares that header private to its module, and `<netinet/in.h>` already includes it.
 - Republished under the `@herdwatch/cordova-plugin-advanced-http` npm scope, with the plugin id and repository/homepage/bugs URLs updated to point at this fork.
 
 Everything else tracks upstream `master`. Keep this list exhaustive: it is what the next sync has to preserve.
