@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="3.3.3" encoding="UTF-8" standalone="yes"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="@herdwatch/cordova-plugin-advanced-http" version="3.3.2-fix.2">
   <name>Advanced HTTP plugin</name>
   <description>
